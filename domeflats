@@ -1,0 +1,42 @@
+#!/bin/csh -f
+
+# Universal params
+sampmode MCDS 8
+coadd 5
+
+## Wide Camera ##
+camera wide
+
+# Y band
+obj Wide_YBand_Flat
+filt y
+tint 8
+goi
+
+
+# J band
+obj Wide_JBand_Flat
+filt j
+tint 1.2
+goi
+
+# H band
+obj Wide_HBand_Flat
+filt h
+tint 1.2
+goi
+
+# K band
+obj Wide_HBand_Flat
+filt k
+tint 6
+goi
+
+## Narrow Camera ##
+camera narrow
+
+# J band
+obj Narrow_JBand_Flat
+filt j
+tint 20
+goi

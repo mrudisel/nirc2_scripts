@@ -1,0 +1,16 @@
+#!/bin/csh -f
+
+camera narrow
+sampmode MCDS 8
+
+obj JBand_Narrow
+
+filt j
+coadd 2
+tint 300
+bxy3 1.5
+
+goi
+
+# According to the ETC:
+# Total time = 1856.5 seconds (~31 mins)

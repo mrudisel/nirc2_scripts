@@ -1,0 +1,14 @@
+#!/bin/csh -f
+
+object darks
+
+camera wide
+
+shutter closed
+
+sampmode MCDS 8
+
+coadd 2
+tint 240
+
+goi 1

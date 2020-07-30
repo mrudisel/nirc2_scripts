@@ -1,0 +1,16 @@
+#!/bin/csh -f
+
+camera wide
+sampmode MCDS 8
+
+obj YBand_Wide
+
+filt y
+coadd 2
+bxy3 5
+tint 240
+
+goi
+
+# According to the ETC:
+# Total time = 1495.5 seconds (~25 minutes)
