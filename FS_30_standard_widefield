@@ -1,0 +1,36 @@
+#!/bin/csh -f
+
+camera wide
+sampmode MCDS 8
+
+# Y band
+obj FS_30_YBand_Widefield
+filt y
+tint 0.25
+coadd 2
+bxy3 5
+goi
+
+# J band
+obj FS_30_JBand_Widefield
+filt j
+tint 0.25
+coadd 2
+bxy3 5
+goi
+
+# H band
+obj FS_30_HBand_Widefield
+filt h
+tint 0.25
+coadd 2
+bxy3 5
+goi
+
+# K band
+obj FS_30_KBand_Widefield
+filt k
+tint 0.25
+coadd 2
+bxy3 5
+goi

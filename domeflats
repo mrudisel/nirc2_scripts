@@ -2,7 +2,7 @@
 
 # Universal params
 sampmode MCDS 8
-coadd 5
+coadd 1
 
 ## Wide Camera ##
 camera wide
@@ -10,27 +10,26 @@ camera wide
 # Y band
 obj Wide_YBand_Flat
 filt y
-tint 8
-goi
-
+tint 12
+goi 5
 
 # J band
 obj Wide_JBand_Flat
 filt j
-tint 1.2
-goi
+tint 2
+goi 5
 
 # H band
 obj Wide_HBand_Flat
 filt h
-tint 1.2
-goi
+tint 2
+goi 5
 
 # K band
 obj Wide_HBand_Flat
 filt k
 tint 6
-goi
+goi 5
 
 ## Narrow Camera ##
 camera narrow
@@ -39,4 +38,4 @@ camera narrow
 obj Narrow_JBand_Flat
 filt j
 tint 20
-goi
+goi 5
